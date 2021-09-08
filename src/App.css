@@ -86,7 +86,7 @@ form > button {
     background-color: #870000;
     color: whitesmoke;
     cursor: pointer;
-    margin-left: 10px;
+    margin: 5px;
 }
 
 .primary-button {
@@ -94,23 +94,28 @@ form > button {
     color: whitesmoke;
     cursor: pointer;
     min-width: 175px;
+    margin-top: 5px;
 }
 
-search-result {
+.primary-button-disabled {
+    background-color: #748188;
+    color: rgb(150, 144, 144);
+    cursor: not-allowed;
+    min-width: 175px;
+    margin-top: 5px;
 }
 
 table {
-    border: 1px solid gray;
+    border: none;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
 
 th,
 td {
-    color: black;
-    text-align: left;
-    border: 2px solid gray;
-    padding: 5px 6px 1px 6px;
+    color: #1c313a;
+    text-align: center;
+    padding: 4px 8px 4px 8px;
 }
 th {
     background-color: #1c313a;

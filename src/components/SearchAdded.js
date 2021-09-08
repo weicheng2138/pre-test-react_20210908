@@ -56,7 +56,11 @@ const SearchAdded = ({ collection, dispatch, isEmpty }) => {
             </table>
             <div>
                 <button
-                    className="primary-button"
+                    className={`${
+                        isLoading || isEmpty
+                            ? "primary-button-disabled"
+                            : "primary-button"
+                    }`}
                     disabled={isLoading || isEmpty}
                     onClick={onCalculate(collection)}
                 >
